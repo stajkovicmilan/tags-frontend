@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewLink()">New Link</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-link-item *ngFor="let linkEl of links; let i = index" [link]="linkEl" [index]="i">
+    </app-link-item>
+  </div>
+</div>
